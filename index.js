@@ -31,6 +31,9 @@ function redisDB(access) {
   this.delete = async (key) => {
     await client.del(key);
   };
+  this.getOriginalClient = () => {
+    return this.client;
+  };
 }
 
 function mongoDB(access) {
@@ -59,6 +62,10 @@ function mongoDB(access) {
   };
   this.delete = async (key) => {
     await collection.deleteOne({ key });
+  };
+
+  this.getOriginalClient = () => {
+    return this.client;
   };
 }
 
