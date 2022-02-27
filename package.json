@@ -1,0 +1,24 @@
+{
+  "name": "kvutil",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ayshptk/kv-util.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ayshptk/kv-util/issues"
+  },
+  "homepage": "https://github.com/ayshptk/kv-util#readme",
+  "dependencies": {
+    "mongodb": "^4.4.0",
+    "redis": "^4.0.4"
+  }
+}
