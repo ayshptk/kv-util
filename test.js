@@ -9,17 +9,17 @@ async function main() {
     try {
       const db = new kvutil(service, accessKeys[service]);
       await db.connect();
-      await db.set("fooferwerwrewefrw", "bar");
-      await db.get("fooferwerwrewefrw");
-      if ((await db.get("fooferwerwrewefrw")) !== "bar") {
+      await db.set("foo", "bar");
+      await db.get("foo");
+      if ((await db.get("foo")) !== "bar") {
         throw new Error("SET FAILED");
       } else {
         console.log(`${service} SET PASSED`);
         console.log(`${service} GET PASSED`);
       }
-      await db.delete("fooferwerwrewefrw");
-      if ((await db.get("fooferwerwrewefrw")) !== null) {
-        console.log(await db.get("fooferwerwrewefrw"));
+      await db.delete("foo");
+      if ((await db.get("foo")) !== null) {
+        console.log(await db.get("foo"));
         throw new Error("DELETE FAILED");
       } else {
         console.log(`${service} DELETE PASSED`);
