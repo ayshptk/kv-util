@@ -2,7 +2,7 @@ const kvutil = require(".");
 
 async function main() {
   const accessKeys = {
-    redis: process.env.REDIS,
+    //redis: process.env.REDIS,
     mongo: process.env.MONGO,
   };
   Object.keys(accessKeys).forEach(async (service) => {
