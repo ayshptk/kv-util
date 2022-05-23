@@ -9,6 +9,7 @@ function db(service, access) {
   return new services[service](access);
 }
 
+
 function redisDB(access) {
   const client = redis.createClient({
     url: access,

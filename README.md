@@ -74,6 +74,9 @@ async function main() {
 
   // delete
   await db.delete("foo");
+  
+  // disconnect
+  await db.disconnect();
 
   // use official SDK of the service
   db.getOriginalClient();
